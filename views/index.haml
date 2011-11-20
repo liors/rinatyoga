@@ -1,0 +1,5 @@
+%div.container
+  %div{:id => "banner"} Coming soon!
+  %ul{:id => "friends", :class => "list"}
+    - @friends.each do |name, lastname|
+      %li= name+" "+lastname

@@ -1,0 +1,117 @@
+/* reset.css */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;background:white;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+ol, li{list-style: none;}
+.clear{clear:both;}
+a:link, a:visited,a:hover,a:active{color:black;text-decoration:none}
+
+html, body {height: 100%;}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;
+}
+
+.wrap {
+	background-color:white;
+	min-height: 100%;
+	margin: 50px auto 0 auto;
+}
+	
+.everything {
+	width: 950px;
+	margin:0 auto;
+	overflow:auto;
+	padding-bottom: 171px;
+	position:relative;
+	z-index:1;
+}
+
+.notes {
+	float:left;
+	position:relative;
+	top: 142px;
+	left: 34px;
+}
+
+.main {
+	float:left;
+	text-align: center;
+	width: 600px;	
+	position:relative;
+	z-index:1;
+}
+.main #slideshow {
+	height:370px;
+	margin-left: 60px;
+}
+.main #main-text {
+	direction:rtl;
+	text-align: justify;
+}
+.sidebar {
+	float:right;
+	width:178px;
+}
+.sidebar .navigation {
+	margin:40px 12px 40px 0;
+}
+
+.sidebar .navtabs li{
+	direction: rtl;
+}
+
+.sidebar footer {
+	text-align:center;
+}
+.footer {
+	background: url('http://localhost:4567/images/all-mounts.png') repeat-x;
+	position:relative;
+	z-index:0;
+	height: 177px; 
+	position: relative;
+	margin-top: -150px;
+	clear:both;
+	z-index:1;
+}
+
+.sun-wrapper {
+	position:relative;
+	width:0;
+	margin:0 auto;
+}
+.sun {
+	background: url('http://localhost:4567/images/sun.png') no-repeat;
+	width: 867px;
+	height: 559px;
+	position: absolute;
+	top: -617px;
+	z-index:0;
+	left: -355px;
+}
+.footer ol {
+	text-align:center;	
+	position:relative;
+	top: 115px;
+}
+.footer .footertabs li{
+	display:inline;
+	margin: 0 5px;
+	color:#fff;
+}
+.footer .footertabs li a{
+	color:#fff;
+} 
