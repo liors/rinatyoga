@@ -1,8 +1,40 @@
 !!!
 %html
   %head
-    %title Mezeg Production Presents
-    %link{:rel => 'stylesheet', :href => 'http://www.blueprintcss.org/blueprint/screen.css', :type => 'text/css'}   
-    %link{:rel => 'stylesheet', :href => 'css/style.css'}  
+    %title בית היוגה - רינתיה
+    %meta{:name => "keywords", :content => ''}
+    %meta{:name => "description", :content => ''}
+    %link{:rel => 'stylesheet', :href => 'css/style.css'}
+    %script{:type => 'text/javascript', :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => 'js/site.js'}
   %body
-    = yield
+    %div.wrap
+      %div.everything
+        = yield
+        %aside.sidebar
+          %header
+            %a{:href => "/"}
+              %img{:src => 'images/logo.png', :width => '178', :height => '126'}
+          %nav.navigation
+            %ol.navtabs
+              %li
+                %a{:href => '/schedule'}לוח שעורים
+              %li
+                %a{:href => '/map'}מפת הגעה ודרכי תקשורת
+              %li
+                %a{:href => '/about'}אודות היוגה
+              %li
+                %a{:href => '/news'}חדשות ומבצעים
+              %li
+                %a{:href => 'gallery'}גלריה
+          %footer
+            %img{:src => 'images/all-one-thin-petals.png', :width => '111', :height => '114'}
+        %div.clear
+    %div.footer
+      %ol.footertabs
+        %li רחוב הרימונים 37, מושב רינתיה
+        %li|
+        %li
+          %a{:href => 'mailto:rinatyo3@gmail.com'}rinatyo3@gmail.com מייל
+        %li|
+        %li טלפון 052-3986780

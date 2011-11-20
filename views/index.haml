@@ -1,5 +1,25 @@
-%div.container
-  %div{:id => "banner"} Coming soon!
-  %ul{:id => "friends", :class => "list"}
-    - @friends.each do |name, lastname|
-      %li= name+" "+lastname
+%aside.notes
+  %img{:src => 'images/clip.png', :width => '196', :height => '286'}
+%div.main
+  %div#slideshow
+    %img{:src => 'images/bowl.png', :width => '535', :height => '369'}
+    %img{:src => 'images/gate.png', :width => '535', :height => '369'}
+    %img{:src => 'images/studio.png', :width => '535', :height => '369'}
+  %div.clear
+  %section#main-text
+    %p
+      יוגה = הכי קרוב לעצמך
+    %p
+      בתרגול פיזי של אשטנגה ויניאסה יוגה נוצר חום גוף שמייצר זיעה המטהרת את הגוף מרעלים פיזיים.
+    %p ע"י תנועה בקצב נשימה משתחרר/ת המתרגל/ת גם באופן מנטאלי מרגשות ומחשבות תקועות.
+    %p נועה וחשיבה אלה מביאות את התודעה למקום שקט שבו מתאפשרת לה מנוחה עמוקה.
+    %p מקום בו מתאפשר להתנתק ולו לרגע ממחשבות מטרידות הגדרות ותוויות הכובלות את הגוף והתודעה ולהתחבר למקור.
+    %p זהו חיבור למקור מתוך עבודה פיזית של גוף ונשימה, עבודה פיזית לעיתים קשה אך משתלמת.
+    %p זהו חיבור למקור שמביא אותנו הכי קרוב לעצמנו,
+    %p הכי קרוב לאהבה.
+%script{:type => "text/javascript", :charset => "utf-8"}
+  //<![CDATA[
+  $(document).ready(function() {
+  rinatyoga.site.init();
+  })
+  //]]>
