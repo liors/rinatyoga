@@ -32,7 +32,7 @@ margin-top:-32767px;
 }
 	
 .everything {
-	width: 950px;
+	width: 1024px;
 	margin:0 auto;
 	overflow:auto;
 	padding-bottom: 171px;
@@ -78,7 +78,7 @@ margin-top:-32767px;
 	text-align:center;
 }
 .footer {
-	background: url('http://localhost:4567/images/all-mounts.png') repeat-x;
+	background: url('../images/all-mounts.png') repeat-x;
 	position:relative;
 	z-index:0;
 	height: 177px; 
@@ -94,13 +94,13 @@ margin-top:-32767px;
 	margin:0 auto;
 }
 .sun {
-	background: url('http://localhost:4567/images/sun.png') no-repeat;
+	background: url('../images/sun.png') no-repeat;
 	width: 867px;
 	height: 559px;
 	position: absolute;
 	top: -617px;
 	z-index:0;
-	left: -355px;
+	left
 }
 .footer ol {
 	text-align:center;	
