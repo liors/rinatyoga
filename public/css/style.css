@@ -16,20 +16,15 @@ a:link, a:visited,a:hover,a:active{color:black;text-decoration:none}
 
 html, body {height: 100%;}
 
-/*Opera Fix*/
-body:before {/* thanks to Maleika (Kohoutec)*/
-content:"";
-height:100%;
-float:left;
-width:0;
-margin-top:-32767px;
+body>#main {
+    height: auto;
+    min-height: 100%;
 }
 
-.wrap {
+#main {
 	min-height: 100%;
+    height: 100%;
 	margin: 0 auto;
-    position:relative;
-    z-index:2;
 }
 	
 .everything {
@@ -79,43 +74,78 @@ margin-top:-32767px;
 	text-align:center;
 }
 
-.footer {
-    position:relative;
-    margin-top:-179px;
+/* start footer */
+#footer {
+    height: 174px;
+    clear: both;
+    position: relative;
+    margin-top: -175px;
 }
-.footer .pattern {
-	background: url('../images/mountains-for-repeat.png') repeat-x;
-	height: 155px;
-	clear:both;
-	z-index:1;
-    position:relative;
+
+#footer .clear {
+    clear: both;
 }
-.footer .ab {
-    margin:0 auto;
-    position:relative;
-    top:-5px;
-    width:705px;
+
+#footer-loop {
+    background: url('../images/footerSkyBg.jpg') repeat-x;
+    height: 300px;
+    position: absolute;
+    top: -370px;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
-.footer .center{
-	background: url('../images/mountains.png') no-repeat;
-	height: 493px;
-    width: 900px;
-    margin:0 auto;
-    position:absolute;
-    top:-338px;
-    left:-47px;
+#footer.tool {
+	z-index: -1;
 }
-.footer ol {
+#footer.tool #footer-loop {
+    top: -216px;
+}
+
+#footer #footer-bg {
+    background: url('../images/mountains-for-repeat.png') repeat-x;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    height: 155px;
+    top: 20px;
+}
+
+#footer .center {
+   margin: 0 auto;
+   width: 0px;
+}
+
+#footer.tool .center {
+   position: relative;
+}
+
+#footer #footer-center #footer-sun {
+    height: 559px;
+    width: 867px;
+    background: url('../images/sun.png') no-repeat;
+    position: absolute;
+    top: -405px;
+    left: -187px;
+    z-index: -1;
+}
+/* end footer */
+
+
+
+
+#footer ol {
 	text-align:center;	
 	position:relative;
     z-index:2;
 	top: 135px;
 }
-.footer .footertabs li{
+#footer .footertabs li{
 	display:inline;
 	margin: 0 5px;
 	color:#fff;
 }
-.footer .footertabs li a{
+#footer .footertabs li a{
 	color:#fff;
 } 
