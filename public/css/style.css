@@ -27,14 +27,14 @@ margin-top:-32767px;
 
 .wrap {
 	min-height: 100%;
-	margin: 50px auto 0 auto;
+	margin: 0 auto;
     position:relative;
     z-index:2;
 }
 	
 .everything {
 	width: 985px;
-	margin:0 auto;
+	padding-top:50px;
 	overflow:auto;
 	position:relative;
 	z-index:1;
@@ -80,7 +80,7 @@ margin-top:-32767px;
 
 .footer {
     position:relative;
-    margin-top:-155px;
+    margin-top:-179px;
 }
 .footer .pattern {
 	background: url('../images/mountains-for-repeat.png') repeat-x;
