@@ -86,15 +86,6 @@ body>#main {
     clear: both;
 }
 
-#footer-loop {
-    background: url('../images/footerSkyBg.jpg') repeat-x;
-    height: 300px;
-    position: absolute;
-    top: -370px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
 #footer.tool {
 	z-index: -1;
 }
