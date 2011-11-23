@@ -6,6 +6,9 @@
     %meta{:name => "description", :content => ''}
     %link{:rel => 'stylesheet', :href => 'css/style.css'}
     %script{:type => 'text/javascript', :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'}
+    <!--[if lt IE 9]>
+    %script{:type => 'text/javascript', :src =>'http://html5shiv.googlecode.com/svn/trunk/html5.js'}
+    <![endif]-->
     %script{:type => 'text/javascript', :src => 'js/site.js'}
   %body
     %div#main
@@ -44,6 +47,3 @@
             %a{:href => 'mailto:rinatyo3@gmail.com'}מייל: rinatyo3@gmail.com
           %li|
           %li רחוב הרימונים 37, מושב רינתיה
-    <!--[if lt IE 9]>
-    %script{:type => 'text/javascript', :src =>'http://html5shiv.googlecode.com/svn/trunk/html5.js'}
-    <![endif]-->
