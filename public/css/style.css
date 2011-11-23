@@ -121,13 +121,9 @@ body>#main {
     left: -187px;
     z-index: -1;
 }
-/* end footer */
-
-
-
-
 #footer ol {
-	text-align:center;	
+	direction: rtl;
+    text-align:center;
 	position:relative;
     z-index:2;
 	top: 135px;
@@ -139,4 +135,5 @@ body>#main {
 }
 #footer .footertabs li a{
 	color:#fff;
-} 
+}
+/* end footer */
