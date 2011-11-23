@@ -45,7 +45,8 @@ body>#main {
 
 .main {
 	float:left;
-	width: 600px;	
+	direction:rtl;
+	width: 600px;
 	position:relative;
 	z-index:1;
 }
