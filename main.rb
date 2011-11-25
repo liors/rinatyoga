@@ -20,7 +20,6 @@ end
 
 get '/' do
   @note = Note.all_in().limit(1)[0]
-  putes @note
   haml :index
 end
 
