@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'mongoid'
 require 'sinatra'
-require 'model/note'
 
 configure :development do
     Mongoid.configure do |config|
@@ -11,10 +10,6 @@ configure :development do
 end
 
 configure :production do
-    set :username,'yael'
-    set :token,'shakenN0tstirr3d'
-    set :password,'007'
-
     Mongoid.configure do |config|
       name = 'app998473'
       config.master = Mongo::Connection.from_uri(ENV['MONGOHQ_URL']).db(name)
