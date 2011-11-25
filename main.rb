@@ -10,6 +10,10 @@ configure :development do
 end
 
 configure :production do
+    set :username,'yael'
+    set :token,'shakenN0tstirr3d'
+    set :password,'007'
+
     Mongoid.configure do |config|
       name = 'app998473'
       config.master = Mongo::Connection.from_uri(ENV['MONGOHQ_URL']).db(name)
@@ -30,7 +34,6 @@ end
 not_found do
     'This is nowhere to be found.'
 end
-
 
 
 class Note
