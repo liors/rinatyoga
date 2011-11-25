@@ -10,9 +10,8 @@ configure :development do
 end
 
 configure :production do
-    set :username,'yael'
-    set :token,'shakenN0tstirr3d'
-    set :password,'007'
+    set :username,'ozzy'
+    set :password,'mika09'
 
     Mongoid.configure do |config|
       name = 'app998473'
