@@ -10,6 +10,9 @@ configure :development do
 end
 
 configure :production do
+    set :username,'heroku'
+    set :password,'026abdb267b2f6b1fd42d18894368119'
+
     Mongoid.configure do |config|
       name = 'app998473'
       config.master = Mongo::Connection.from_uri(ENV['MONGOHQ_URL']).db(name)
