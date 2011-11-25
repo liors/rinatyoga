@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'mongoid'
 require 'sinatra'
-require 'model/note'
 
 configure :development do
     Mongoid.configure do |config|
@@ -30,4 +29,12 @@ end
 
 not_found do
     'This is nowhere to be found.'
+end
+
+
+
+class Note
+  include Mongoid::Document
+  field :line1
+  field :line2
 end
