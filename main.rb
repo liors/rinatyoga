@@ -10,9 +10,6 @@ configure :development do
 end
 
 configure :production do
-    set :username,'ozzy'
-    set :password,'mika09'
-
     Mongoid.configure do |config|
       name = 'app998473'
       config.master = Mongo::Connection.from_uri(ENV['MONGOHQ_URL']).db(name)
