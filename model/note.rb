@@ -1,6 +1,7 @@
 require "mongoid"
 
-class Email
+class Note
   include Mongoid::Document
-  field :email
+  field :line1
+  field :line2  
 end

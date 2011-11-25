@@ -33,7 +33,7 @@ body>#main {
 }
 	
 .everything {
-	width: 1028px;
+	width: 1009px;
     margin: 0 auto;
 	padding:50px 0 176px;
 	overflow:auto;
@@ -61,12 +61,13 @@ body>#main {
 }
 .notes article {
     font-size: 20px;
+    width: 130px;
 }
 
 .main {
 	float:left;
 	direction:rtl;
-	width: 600px;
+	width: 580px;
 	position:relative;
 	z-index:1;
 }
@@ -105,6 +106,35 @@ body>#main {
 	text-align:center;
 }
 
+
+/* start schedule */
+.schedule {
+    direction: rtl;
+    float:left;
+    width:800px;
+    margin-top:55px;
+}
+.schedule .header {
+    padding-bottom:25px;
+}
+.schedule #main-text {
+    width:700px;
+    padding-top:10px;
+    font-size:15px;
+    color:#690E1D;
+}
+
+.schedule #main-text header, .schedule #main-text footer{
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.schedule #main-text span {
+    color:#ff6670;
+}
+/* end schedule */
+
+
 /* start footer */
 #footer {
     height: 174px;
@@ -112,14 +142,6 @@ body>#main {
     position: relative;
     margin-top: -174px;
 
-}
-
-#footer .clear {
-    clear: both;
-}
-
-#footer.tool {
-	z-index: 0;
 }
 
 #footer #footer-bg {
@@ -147,7 +169,7 @@ body>#main {
     background: url('../images/sun.png') no-repeat;
     position: absolute;
     top: -405px;
-    left: -303px;
+    left: -362px;
     z-index: -1;
 }
 
