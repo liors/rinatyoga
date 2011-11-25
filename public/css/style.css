@@ -34,8 +34,8 @@ body>#main {
 	
 .everything {
 	width: 1009px;
-    margin: 0 auto;
-	padding:50px 0 176px;
+    margin: 0 auto 176px;
+	padding:50px 0 0;
 	overflow:auto;
 	position:relative;
 	z-index:1;
@@ -141,7 +141,7 @@ body>#main {
     clear: both;
     position: relative;
     margin-top: -174px;
-
+    z-index:0;
 }
 
 #footer #footer-bg {
