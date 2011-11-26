@@ -1,6 +1,7 @@
 require 'rubygems'
-require 'mongoid'
 require 'sinatra'
+require 'mongoid'
+require 'haml'
 require 'model/note'
 
 configure :development do

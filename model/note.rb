@@ -2,6 +2,6 @@ require "mongoid"
 
 class Note
   include Mongoid::Document
-  field :header
-  field :body  
+  field :header, :type => String
+  field :body, :type => String  
 end
