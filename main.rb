@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'mongoid'
 require 'haml'
-require 'model/note'
+require 'note'
 
 configure :development do
   Mongoid.configure do |config|
