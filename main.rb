@@ -2,7 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'mongoid'
 require 'haml'
-require 'note'
 
 configure :development do
   Mongoid.configure do |config|
@@ -52,6 +51,13 @@ post '/admin/notes' do
   else
     puts "Error(s): ", @note.errors.map {|k,v| "#{k}: #{v}"}
   end
+end
+
+
+class Note
+  include Mongoid::Document
+  field :header, :type => String
+  field :body, :type => String
 end
 
 not_found do
