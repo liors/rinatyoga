@@ -135,6 +135,42 @@ body>#main {
 }
 /* end schedule */
 
+
+/* start about */
+.about {
+    direction: rtl;
+    float:left;
+    width:800px;
+    margin-top:55px;
+    min-height:500px;
+}
+.about .header {
+    
+}
+.about #main-text {
+    width:700px;
+    padding-top:10px;
+    font-size:15px;
+    color:#690E1D;
+}
+
+.about #main-text header, .about #main-text footer{
+    font-weight:bold;
+    margin:10px 0;
+}
+.about #limbs-open, .about #limbs-close, .about #series-open, .about #series-close {
+    cursor:pointer;
+    color:#5fc4a0;
+}
+.about #limbs-open:hover, .about #limbs-close:hover, .about #series-open:hover, .about #series-close:hover {
+    text-decoration:underline;    
+}
+.about #limbs-text, .about #series-text {
+    display:none;
+}
+
+/* end schedule */
+
 /* start admin */
 .admin {
     float:left;

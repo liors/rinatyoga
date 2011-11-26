@@ -30,6 +30,10 @@ get '/schedule' do
   haml :schedule
 end
 
+get '/about' do
+  haml :about
+end
+
 get '/admin' do
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
     [username, password] == ['rinat', 'aluma']

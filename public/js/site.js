@@ -8,6 +8,25 @@ rinatyoga.site = {
     schedule : function() {
         $('a.#schedule').css('color', '#8fcaba');
     },
+    about : function() {
+        $('a.#about').css('color', '#8fcaba');
+        $('a.#limbs-open').click(function() {
+           $("#limbs-text").fadeIn();
+           $('a.#limbs-open').hide();
+        });
+        $('a.#limbs-close').click(function() {
+           $("#limbs-text").fadeOut();
+           $('a.#limbs-open').show();
+        });
+        $('a.#series-open').click(function() {
+           $("#series-text").fadeIn();
+           $('a.#series-open').hide();
+        });
+        $('a.#series-close').click(function() {
+           $("#series-text").fadeOut();
+           $('a.#series-open').show();
+        });
+    },
     admin : function() {
         $("#noteUpdate").click(function() {
             var header = $("input.header").val();
