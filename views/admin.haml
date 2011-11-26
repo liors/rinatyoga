@@ -1,0 +1,25 @@
+%div.admin
+  %aside.notes
+    %section
+      %header
+        #{@note.header}
+      %article
+        #{@note.body}
+  %section.note
+    %form{:action => "admin/notes", :method => "post"}
+      %label{:for => "header"} Home page note - header
+      %br
+      %input.header{:type => "text", :name => "header", :value => "#{@note.header}"}
+      %br
+      %label{:for => "header"} Home page note - body
+      %br
+      %input.body{:type => "text", :name => "body", :value => "#{@note.body}"}
+      %br
+      %input{:id => "noteUpdate", :type => "submit", :value => "Update"}       
+
+%script{:type => "text/javascript", :charset => "utf-8"}
+  //<![CDATA[
+  $(document).ready(function() {
+  //rinatyoga.site.admin();
+  })
+  //]]>

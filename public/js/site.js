@@ -7,6 +7,22 @@ rinatyoga.site = {
     
     schedule : function() {
         $('a.#schedule').css('color', '#8fcaba');
+    },
+    admin : function() {
+        $("#noteUpdate").click(function() {
+            var header = $("input.header").val();
+            var body = $("input.body").val();
+            var dataString = 'header='+ header + '&body=' + body;
+            $.ajax({
+                type: "POST",
+                url: "admin/notes",
+                data: dataString,
+                success: function() {
+
+                }
+            });
+            return false;
+        });
     }
     
 }

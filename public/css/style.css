@@ -41,7 +41,7 @@ body>#main {
 	z-index:1;
 }
 
-.notes {
+.everything .notes {
 	float:left;
 	position:relative;
 	top: 142px;
@@ -55,6 +55,7 @@ body>#main {
     position:relative;
     top:100px;
     right:70px;
+    width:145px;
 }
 .notes header {
     font-size: 24px;
@@ -133,6 +134,55 @@ body>#main {
     color:#ff6670;
 }
 /* end schedule */
+
+/* start admin */
+.admin {
+    float:left;
+    width: 800px;
+    padding-bottom:100px;
+}
+.admin .note {
+    text-align:right;
+    padding:50px;
+}
+
+.everything .admin .notes {
+	float:left;
+	position:relative;
+	top: 30px;
+	left: 200px;
+    background:url('../images/larger_note.png') no-repeat;
+    width:249px;
+    height:379px;
+    direction: rtl;
+}
+
+.admin .note input[type=text] {
+    direction:rtl;
+    width: 250px;
+	font-size: 14px;
+	height: 30px;
+	border: solid 1px #cccccc;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 0 8px 0 0;
+	color: #4f4f4f;
+	outline:none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    margin:10px 0;
+}
+
+.admin .note input[type=text]:focus {
+    box-shadow: 0 0 5px #cbf19c;
+    -webkit-box-shadow: 0 0 5px #cbf19c;
+    -moz-box-shadow: 0 0 5px #cbf19c;
+    border:1px solid rgba(189, 200, 177, 0.8);
+}
+
+/* end admin */
 
 
 /* start footer */
