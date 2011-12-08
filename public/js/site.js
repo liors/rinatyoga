@@ -2,7 +2,7 @@ var rinatyoga = {}
 
 rinatyoga.site = {
     init : function() {
-    	$('#slideshow').cycle({fx: 'fade', timeout:  5000, pause:  1});
+    	
     },
     
     schedule : function() {

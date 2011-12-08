@@ -1,10 +1,4 @@
 %div.admin
-  %aside.notes
-    %section
-      %header
-        #{@note.header}
-      %article
-        #{@note.body}
   %section.note
     %form{:action => "admin/notes", :method => "post"}
       %label{:for => "header"} Home page note - header

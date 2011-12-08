@@ -27,10 +27,12 @@ get '/' do
 end
 
 get '/schedule' do
+  @note = session[:note]
   haml :schedule
 end
 
 get '/about' do
+  @note = session[:note]
   haml :about
 end
 

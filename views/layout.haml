@@ -11,36 +11,45 @@
     <![endif]-->
     %script{:type => 'text/javascript', :src => 'js/site.js'}
   %body
-    %div#main
-      %div.everything
-        = yield
-        %aside.sidebar
-          %header
-            %a{:href => "/"}
-              %img{:src => 'images/logo.png', :width => '178', :height => '126'}
-          %nav.navigation
-            %ol.navtabs
-              %li
-                %a{:id => 'schedule' ,:href => '/schedule'}לוח שעורים
-              %li
-                %a{:href => '/map'}מפת הגעה ודרכי תקשורת
-              %li
-                %a{:id => 'about', :href => '/about'}אודות היוגה
-              %li
-                %a{:href => '/news'}חדשות ומבצעים
-              %li
-                %a{:href => 'gallery'}גלריה
+    %div#wrap
+      %div#main.clearfix
+        %header.header
+          %section.header-left
+          %section.header-center
+            %aside.logo
+              %a{:href => "/"}
+                %img{:src => 'images/logo.png', :width => '178', :height => '126'}
+        %div.clear
+        %div.everything
+          %aside.sidebar
+            %nav.navigation
+              %ol.navtabs
+                %li
+                  %a{:id => 'schedule' ,:href => '/schedule'}לוח שעורים
+                %li
+                  %a{:href => '/map'}מפת הגעה ודרכי תקשורת
+                %li
+                  %a{:id => 'about', :href => '/about'}אודות היוגה
+                %li
+                  %a{:href => '/news'}חדשות ומבצעים
+                %li
+                  %a{:href => 'gallery'}גלריה
+            %section.notes
+              %header
+                #{@note.header}
+              %article
+                #{@note.body}
+          %section.body
+            = yield
           %div.clear
-    %div{:id => 'footer', :class => 'tool'}
-      %div{:id => 'footer-center', :class => 'center'}
-        %aside#footer-sun
-        %aside#footer-logo
-      %div#footer-bg
-      %div#footer-links
-        %ol.footertabs
-          %li טלפון 052-3986780        
-          %li|
-          %li
-            %a{:href => 'mailto:rinatyo3@gmail.com'}מייל: rinatyo3@gmail.com
-          %li|
-          %li רחוב הרימונים 37, מושב רינתיה
+    %footer#footer
+      %div.footer-bg
+      %div.footer-top
+        %div#footer-links
+          %ol.footertabs
+            %li טלפון 052-3986780
+            %li|
+            %li
+              %a{:href => 'mailto:rinatyo3@gmail.com'}מייל: rinatyo3@gmail.com
+            %li|
+            %li רחוב הרימונים 37, מושב רינתיה
