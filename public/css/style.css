@@ -105,7 +105,7 @@ body > #wrap {height: auto; min-height: 100%;}
     font-weight:bold;
 }
 .sidebar .navigation .navtabs li a:hover {
-     text-shadow: 1px 1px 1px #92827b;
+    text-shadow: 0px 0px 1px #796056;
 }
 
 
@@ -130,7 +130,7 @@ body > #wrap {height: auto; min-height: 100%;}
     color: #763216;
 }
 .links a:hover {
-    text-shadow: 1px 1px 1px #796056;
+    text-shadow: 0px 0px 1px #796056;
 }
 .links li {
     float:left;
