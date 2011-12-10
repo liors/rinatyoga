@@ -27,13 +27,15 @@
                 %li
                   %a{:id => 'schedule' ,:href => '/schedule'}לוח שעורים
                 %li
-                  %a{:href => '/map'}מפת הגעה ודרכי תקשורת
-                %li
-                  %a{:id => 'about', :href => '/about'}אודות היוגה
+                  %a{:href => '/map'}מפת הגעה
                 %li
                   %a{:href => '/news'}חדשות ומבצעים
                 %li
+                  %a{:id => 'about', :href => '/about'}אודות היוגה                                                      
+                %li
                   %a{:href => 'gallery'}גלריה
+            %section.divider
+              %img{:src => "images/news-divider.png"}
             %section.notes
               %header
                 #{@note.header}

@@ -57,7 +57,7 @@ body > #wrap {height: auto; min-height: 100%;}
 
 .everything .notes {
 	direction: rtl;
-    margin-top:40px;
+    margin-top:20px;
 }
 .notes header {
     font-size: 24px;
@@ -72,15 +72,28 @@ body > #wrap {height: auto; min-height: 100%;}
 
 .main {
 	float:left;
+    color:#763216;
+    font-size:19px;
 	direction:rtl;
-	width: 580px;
-	position:relative;
-	z-index:1;
+	width: 550px;
+	margin-bottom:50px;
+}
+.main .intro {
+}
+.main .main-images {
+    margin:30px 0;        
+}
+.main .main-images ol {
+    float:right;
+}
+.main .main-images li {
+    float:left;
+    margin-left: 10px;
 }
 .sidebar {
 	float:right;
 	width:178px;
-    padding:0 12px 40px 0;
+    padding:0 40px 40px 0;
 }
 .sidebar .navigation .navtabs li{
 	direction: rtl;
@@ -90,6 +103,9 @@ body > #wrap {height: auto; min-height: 100%;}
     color:#763216;
     font-size: 22px;
     font-weight:bold;
+}
+.sidebar .navigation .navtabs li a:hover {
+     text-shadow: 1px 1px 1px #92827b;
 }
 
 
@@ -101,13 +117,32 @@ body > #wrap {height: auto; min-height: 100%;}
     float:right;
 }
 
+.sidebar .divider {
+    text-align:right;
+    margin:20px 0;
+}
+.links ol{
+    float:right;
+    font-size:17px;
+    margin-top:3px;
+}
+.links a {
+    color: #763216;
+}
+.links a:hover {
+    text-shadow: 1px 1px 1px #796056;
+}
+.links li {
+    float:left;
+    padding-left:7px;
+}
+
 
 /* start schedule */
 .schedule {
     direction: rtl;
     float:left;
-    width:600px;
-    margin-top:55px;
+    width:550px;
 }
 .schedule .header {
     padding-bottom:25px;
@@ -134,16 +169,14 @@ body > #wrap {height: auto; min-height: 100%;}
 .about {
     direction: rtl;
     float:left;
-    width:600px;
-    margin-top:55px;
     min-height:500px;
 }
 .about .header {
     
 }
 .about #main-text {
-    width:600px;
-    padding-top:10px;
+    width:550px;
+    padding:10px 0 30px;
     font-size:15px;
     color:#690E1D;
 }
