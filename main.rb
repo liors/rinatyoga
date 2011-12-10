@@ -23,6 +23,7 @@ end
 
 get '/' do
   @note = Note.all_in().limit(1)[0]
+  session[:note] = @note
   haml :index
 end
 
@@ -41,7 +42,7 @@ get '/admin' do
     [username, password] == ['rinat', 'aluma']
   end
   @note = Note.all_in().limit(1)[0]
-  session[:note] = @note
+  @note = session[:note]  
   haml :admin
 end
 
