@@ -36,6 +36,21 @@ get '/about' do
   haml :about
 end
 
+get '/map' do
+  @note = getNote
+  haml :map
+end
+
+get '/news' do
+  @note = getNote
+  haml :news
+end
+
+get '/gallery' do
+  @note = getNote
+  haml :gallery
+end
+
 get '/admin' do
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
     [username, password] == ['rinat', 'aluma']
@@ -58,7 +73,7 @@ post '/admin/notes' do
   end
 end
 
-def getNote()
+def getNote
   @note = session[:note]
   if @note.nil?
     @note = Note.all_in().limit(1)[0]

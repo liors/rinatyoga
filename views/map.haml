@@ -1,0 +1,20 @@
+%div.map
+  %header
+    %h1.page-header מפת הגעה
+  %section#main-text
+    %div
+      %span.subtitle כתובת הסטודיו:
+      %span רחוב הרימונים 37, רינתיה
+    %div
+      %span.subtitle מושב רינתיה
+      %span נמצא על כביש 40 בין פתח-תקווה ליהוד.
+    %div
+      %span.subtitle הכניסה
+      %span היא דרך השער השמאלי של משק 37. הסטודיו נמצא בבית הפנימי מצד ימין.
+    %img.map-image{:src => 'images/maps.png'}
+%script{:type => "text/javascript", :charset => "utf-8"}
+  //<![CDATA[
+  $(document).ready(function() {
+  rinatyoga.site.map();
+  })
+  //]]>

@@ -23,7 +23,7 @@ body > #wrap {height: auto; min-height: 100%;}
 #main { padding-bottom:110px;margin: 0 auto;}
 	
 .everything {
-	width: 794px;
+	width: 900px;
     margin: 0 auto;
     background-color:#f1f0f4;
 }
@@ -38,13 +38,13 @@ body > #wrap {height: auto; min-height: 100%;}
     width: 100%;
     background:url('../images/px1-header-repeat.png') repeat-x;
     position:relative;
-    top:145px;
+    top:146px;
     z-index:0;
 }
 .header-center {
     background:url('../images/px2-header.png') no-repeat;
-    width:794px;
-    height: 259px;
+    width:900px;
+    height: 260px;
     margin:0 auto;
     position:relative;
     z-index:1;
@@ -62,20 +62,20 @@ body > #wrap {height: auto; min-height: 100%;}
     margin-top:20px;
 }
 .notes header {
-    font-size: 24px;
+    font-size: 18px;
     color: #e31013;
     font-weight:bold;
 }
 .notes article {
-    font-size: 20px;
+    font-size: 18px;
     width: 130px;
-    color: #e31013;
+    color: #763216;
 }
 
 .main {
-	float:left;
-    color:#763216;
-    font-size:19px;
+	float:right;
+    color:#191919;
+    font-size:18px;
 	direction:rtl;
 	width: 550px;
 	margin-bottom:50px;
@@ -94,16 +94,17 @@ body > #wrap {height: auto; min-height: 100%;}
 }
 .sidebar {
 	float:right;
-	width:178px;
-    padding:0 40px 40px 0;
+    padding:0 60px 40px;
 }
 .sidebar .navigation .navtabs li{
 	direction: rtl;
     padding:3px 0;
 }
+.sidebar .navigation .navtabs .first{
+    padding:0 ;
+}
 .sidebar .navigation .navtabs li a{
-    font-size: 22px;
-    font-weight:bold;
+    font-size: 20px;
 }
 
 .sidebar footer {
@@ -112,6 +113,7 @@ body > #wrap {height: auto; min-height: 100%;}
 
 .body {
     float:right;
+    width:635px;
 }
 
 .sidebar .divider {
@@ -121,53 +123,96 @@ body > #wrap {height: auto; min-height: 100%;}
 .links ol{
     float:right;
     font-size:17px;
-    margin-top:3px;
+    margin-top:10px;
 }
 .links li {
     float:left;
     padding-left:7px;
 }
 
+.page-header {
+    color: #008a71;
+    font-size:20px;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
 
 /* start schedule */
 .schedule {
     direction: rtl;
-    float:left;
-    width:550px;
+    float:right;
 }
 .schedule .header {
     padding-bottom:25px;
 }
 .schedule #main-text {
-    width:550px;
-    padding-top:10px;
+    padding:10px 0 40px 40px;
     font-size:15px;
-    color:#690E1D;
+    color:#191919;
 }
 
 .schedule #main-text header, .schedule #main-text footer{
     font-weight:bold;
-    margin:10px 0;
+    margin-bottom:10px;
 }
 
-.schedule #main-text span {
-    color:#ff6670;
+.schedule #main-text footer{
+    margin-top:10px;
 }
 /* end schedule */
+
+/*start map */
+.map {
+    direction: rtl;
+    float:right;
+}
+.map #main-text {
+    padding:10px 0 40px 40px;
+    font-size:15px;
+    color:#191919;
+}
+.map .subtitle {
+    font-weight:bold;
+}
+.map .map-image {
+     padding-top:40px;
+}
+/*end map */
+
+/*start news */
+.news {
+    direction: rtl;
+    float:right;
+}
+.news #main-text {
+    padding:10px 0 40px 40px;
+    font-size:25px;
+    color:#191919;
+}
+/*end news */
+
+/*start gallery */
+.gallery {
+    direction: rtl;
+    float:right;
+}
+.gallery #main-text {
+    padding:10px 0 40px 40px;
+    font-size:25px;
+    color:#191919;
+}
+/*end gallery */
 
 
 /* start about */
 .about {
     direction: rtl;
-    float:left;
+    float:right;
     min-height:500px;
 }
-.about .header {
-    
-}
 .about #main-text {
-    width:550px;
-    padding:10px 0 30px;
+    padding:0 0 40px 40px;
     font-size:15px;
     color:#690E1D;
 }
@@ -176,15 +221,25 @@ body > #wrap {height: auto; min-height: 100%;}
     font-weight:bold;
     margin:10px 0;
 }
-.about #limbs-open, .about #limbs-close, .about #series-open, .about #series-close {
+.about #limbs-open, .about #limbs-close, .about #series-open,
+.about #series-close, .about #meditation-open, .about #meditation-close,
+.about #yoga-moms-open, .about #yoga-moms-close{
     cursor:pointer;
-    color:#5fc4a0;
+    color:#008a71;
 }
-.about #limbs-open:hover, .about #limbs-close:hover, .about #series-open:hover, .about #series-close:hover {
+.about #limbs-open:hover, .about #limbs-close:hover,
+.about #series-open:hover, .about #series-close:hover,
+.about #meditation-open:hover, .about #meditation-close:hover,
+.about #yoga-moms-close:hover, .about #yoga-moms-open:hover {
     text-decoration:underline;    
 }
-.about #limbs-text, .about #series-text {
+.about #limbs-text, .about #series-text, .about #meditation-text, .about #yoga-moms-text{
     display:none;
+}
+
+.about #yoga-moms-text li {
+    list-style:circle;
+    margin-right:15px;
 }
 
 /* end schedule */
