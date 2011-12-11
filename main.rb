@@ -60,9 +60,9 @@ end
 
 def getNote()
   @note = session[:note]
-  @note.nil? do
-     @note = Note.all_in().limit(1)[0]
-     session[:note] = @note
+  if @note.nil?
+    @note = Note.all_in().limit(1)[0]
+    session[:note] = @note
   end
   return @note
 end
