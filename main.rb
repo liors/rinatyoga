@@ -22,18 +22,17 @@ end
 
 
 get '/' do
-  @note = Note.all_in().limit(1)[0]
-  session[:note] = @note
+  @note = getNote()
   haml :index
 end
 
 get '/schedule' do
-  @note = session[:note]
+  @note = getNote()
   haml :schedule
 end
 
 get '/about' do
-  @note = session[:note]
+  @note = getNote()
   haml :about
 end
 
@@ -41,8 +40,7 @@ get '/admin' do
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
     [username, password] == ['rinat', 'aluma']
   end
-  @note = Note.all_in().limit(1)[0]
-  @note = session[:note]  
+  @note = getNote()
   haml :admin
 end
 
@@ -50,7 +48,7 @@ post '/admin/notes' do
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
     [username, password] == ['rinat', 'aluma']
   end
-  @note = session[:note]
+  @note = getNote()
   @note.header = params[:header]
   @note.body = params[:body]
   if @note.update 
@@ -58,6 +56,15 @@ post '/admin/notes' do
   else
     puts "Error(s): ", @note.errors.map {|k,v| "#{k}: #{v}"}
   end
+end
+
+def getNote()
+  @note = session[:note]
+  @note.nil? do
+     @note = Note.all_in().limit(1)[0]
+     session[:note] = @note
+  end
+  return @note
 end
 
 
