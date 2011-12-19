@@ -2,7 +2,12 @@ var rinatyoga = {}
 
 rinatyoga.site = {
     init : function() {
-    	
+        rinatyoga.site.noteEffect();	
+    },
+
+    noteEffect : function() {
+        $("#notes").delay(3000).fadeOut(1500).fadeIn("slow").delay(3000);
+        rinatyoga.site.noteEffect();
     },
     
     schedule : function() {
