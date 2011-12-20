@@ -13,15 +13,19 @@ rinatyoga.site = {
     
     schedule : function() {
         $('a.#schedule').css('color', '#008a71');
+        rinatyoga.site.noteColorChange();
     },
     map : function() {
         $('a.#map').css('color', '#008a71');
+        rinatyoga.site.noteColorChange();
     },
     news : function() {
         $('a.#news').css('color', '#008a71');
+        rinatyoga.site.noteColorChange();
     },
     gallery : function() {
         $('a.#gallery').css('color', '#008a71');
+        rinatyoga.site.noteColorChange();
     },
     about : function() {
         $('a.#about').css('color', '#008a71');
@@ -57,6 +61,7 @@ rinatyoga.site = {
            $("#yoga-moms-text").fadeOut();
            $('a.#yoga-moms-open').show();
         });
+        rinatyoga.site.noteColorChange();
     },
     admin : function() {
         $("#noteUpdate").click(function() {
@@ -73,6 +78,7 @@ rinatyoga.site = {
             });
             return false;
         });
+        rinatyoga.site.noteColorChange();
     }   
 },
 
