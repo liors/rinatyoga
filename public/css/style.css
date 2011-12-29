@@ -151,6 +151,9 @@ body > #wrap {height: auto; min-height: 100%;}
 .schedule .header {
     padding-bottom:25px;
 }
+.schedule .sutra {
+    padding-top:20px;
+}
 .schedule #main-text {
     padding:10px 0 40px 40px;
     font-size:15px;

@@ -27,6 +27,10 @@ rinatyoga.site = {
         $('a.#gallery').css('color', '#008a71');
         rinatyoga.site.noteColorChange();
     },
+    rinat : function() {
+        $('a.#rinat').css('color', '#008a71');
+        rinatyoga.site.noteColorChange();
+    },
     about : function() {
         $('a.#about').css('color', '#008a71');
         $('a.#limbs-open').click(function() {

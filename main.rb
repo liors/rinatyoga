@@ -51,6 +51,11 @@ get '/gallery' do
   haml :gallery
 end
 
+get '/rinat' do
+  @note = getNote()
+  haml :rinat
+end
+
 get '/admin' do
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
     [username, password] == ['rinat', 'aluma']
