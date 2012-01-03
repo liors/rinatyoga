@@ -219,7 +219,6 @@ body > #wrap {height: auto; min-height: 100%;}
 .rinat #main-text {
     padding:10px 0 40px 40px;
     font-size:15px;
-    color:#690E1D;
 }
 .rinat #main-text .pic {
     float:right;
@@ -237,7 +236,6 @@ body > #wrap {height: auto; min-height: 100%;}
 .about #main-text {
     padding:0 0 40px 40px;
     font-size:15px;
-    color:#690E1D;
 }
 
 .about #main-text header, .about #main-text footer{
