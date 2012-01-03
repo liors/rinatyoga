@@ -212,6 +212,21 @@ body > #wrap {height: auto; min-height: 100%;}
 }
 /*end gallery */
 
+/*start rinat*/
+.rinat {
+    direction:rtl;
+}
+.rinat #main-text {
+    padding:10px 0 40px 40px;
+    font-size:15px;
+    color:#690E1D;
+}
+.rinat #main-text .pic {
+    float:right;
+    padding-left:20px;
+}
+/*end rinat*/
+
 
 /* start about */
 .about {
