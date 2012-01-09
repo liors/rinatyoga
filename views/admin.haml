@@ -1,19 +1,99 @@
 %div.admin
   %section.note
     %form{:action => "admin/notes", :method => "post"}
-      %label{:for => "header"} Home page note - header
+      %label{:for => "header"} title
       %br
       %input.header{:type => "text", :name => "header", :value => "#{@note.header}"}
       %br
-      %label{:for => "header"} Home page note - body
+      %label{:for => "header"} text
       %br
       %input.body{:type => "text", :name => "body", :value => "#{@note.body}"}
       %br
+      %br
       %input{:id => "noteUpdate", :type => "submit", :value => "Update"}       
 
-%script{:type => "text/javascript", :charset => "utf-8"}
-  //<![CDATA[
-  $(document).ready(function() {
-  //rinatyoga.site.admin();
-  })
-  //]]>
+  %section.schedule
+    %form{:action => "admin/schedule", :method => "post"}
+      %table
+        %thead
+          %tr
+            %td
+              Sunday
+            %td
+              Monday
+            %td
+              Tuesday
+            %td
+              Wednesday
+            %td
+              Thursday
+            %td
+              Friday
+        %tbody
+          %tr
+            %td
+              %input.day{:type => "text", :name => "sunday1", :value => "#{@schedule.sunday_1}"}
+            %td
+              %input.day{:type => "text", :name => "monday_1", :value => "#{@schedule.monday_1}"}
+            %td
+              %input.day{:type => "text", :name => "tuesday_1", :value => "#{@schedule.tuesday_1}"}
+            %td
+              %input.day{:type => "text", :name => "wednesday_1", :value => "#{@schedule.wednesday_1}"}
+            %td
+              %input.day{:type => "text", :name => "thursday_1", :value => "#{@schedule.thursday_1}"}
+            %td
+              %input.day{:type => "text", :name => "friday_1", :value => "#{@schedule.friday_1}"}
+          %tr
+            %td
+              %input.day{:type => "text", :name => "sunday_2", :value => "#{@schedule.sunday_2}"}
+            %td
+              %input.day{:type => "text", :name => "monday_2", :value => "#{@schedule.monday_2}"}
+            %td
+              %input.day{:type => "text", :name => "tuesday_2", :value => "#{@schedule.tuesday_2}"}
+            %td
+              %input.day{:type => "text", :name => "wednesday_2", :value => "#{@schedule.wednesday_2}"}
+            %td
+              %input.day{:type => "text", :name => "thursday_2", :value => "#{@schedule.thursday_2}"}
+            %td
+              %input.day{:type => "text", :name => "friday_2", :value => "#{@schedule.friday_2}"}
+          %tr
+            %td
+              %input.day{:type => "text", :name => "sunday_3", :value => "#{@schedule.sunday_3}"}
+            %td
+              %input.day{:type => "text", :name => "monday_3", :value => "#{@schedule.monday_3}"}
+            %td
+              %input.day{:type => "text", :name => "tuesday_3", :value => "#{@schedule.tuesday_3}"}
+            %td
+              %input.day{:type => "text", :name => "wednesday_3", :value => "#{@schedule.wednesday_3}"}
+            %td
+              %input.day{:type => "text", :name => "thursday_3", :value => "#{@schedule.thursday_3}"}
+            %td
+              %input.day{:type => "text", :name => "friday_3", :value => "#{@schedule.friday_3}"}
+          %tr
+            %td
+              %input.day{:type => "text", :name => "sunday_4", :value => "#{@schedule.sunday_4}"}
+            %td
+              %input.day{:type => "text", :name => "monday_4", :value => "#{@schedule.monday_4}"}
+            %td
+              %input.day{:type => "text", :name => "tuesday_4", :value => "#{@schedule.tuesday_4}"}
+            %td
+              %input.day{:type => "text", :name => "wednesday_4", :value => "#{@schedule.wednesday_4}"}
+            %td
+              %input.day{:type => "text", :name => "thursday_4", :value => "#{@schedule.thursday_4}"}
+            %td
+              %input.day{:type => "text", :name => "friday_4", :value => "#{@schedule.friday_4}"}
+          %tr
+            %td
+              %input.day{:type => "text", :name => "sunday_5", :value => "#{@schedule.sunday_5}"}
+            %td
+              %input.day{:type => "text", :name => "monday_5", :value => "#{@schedule.monday_5}"}
+            %td
+              %input.day{:type => "text", :name => "tuesday_5", :value => "#{@schedule.tuesday_5}"}
+            %td
+              %input.day{:type => "text", :name => "wednesday_5", :value => "#{@schedule.wednesday_5}"}
+            %td
+              %input.day{:type => "text", :name => "thursday_5", :value => "#{@schedule.thursday_5}"}
+            %td
+              %input.day{:type => "text", :name => "friday_5", :value => "#{@schedule.friday_5}"}
+      %input{:id => "noteUpdate", :type => "submit", :value => "Update"}
+%div.clear

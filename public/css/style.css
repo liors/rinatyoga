@@ -151,6 +151,25 @@ body > #wrap {height: auto; min-height: 100%;}
 .schedule .header {
     padding-bottom:25px;
 }
+
+.schedule .schedule-table {
+    background: url("../images/schedule-BG.png") no-repeat;
+    width: 555px;
+    height: 258px;
+    text-align:right;
+    font-size:12px;
+    
+}
+.schedule .schedule-table thead {
+     font-size:14px;
+    font-weight:bold;
+}
+.schedule .schedule-table tr {
+}
+.schedule .schedule-table td {
+    text-align:center;
+}
+
 .schedule .sutra {
     padding-top:20px;
 }
@@ -263,7 +282,7 @@ body > #wrap {height: auto; min-height: 100%;}
     margin-right:15px;
 }
 
-/* end schedule */
+/* end about */
 
 /* start admin */
 .admin {
@@ -272,6 +291,7 @@ body > #wrap {height: auto; min-height: 100%;}
 .admin .note {
     text-align:right;
     padding:50px;
+    float:right;
 }
 
 .everything .admin .notes {
@@ -309,6 +329,14 @@ body > #wrap {height: auto; min-height: 100%;}
     -webkit-box-shadow: 0 0 5px #cbf19c;
     -moz-box-shadow: 0 0 5px #cbf19c;
     border:1px solid rgba(189, 200, 177, 0.8);
+}
+
+.admin .schedule td {
+    font-size:12px;
+    padding:2px;
+}
+.admin .schedule td input[type=text] {
+    width:90px;
 }
 
 /* end admin */

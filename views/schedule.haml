@@ -2,7 +2,98 @@
   %header
     %h1.page-header לוח שעורים
   %article
-    %img{:src => 'images/schedule.png'}
+    %table.schedule-table
+      %thead
+        %tr{:height => '43'}
+          %td
+          %td
+            ראשון
+          %td
+            שני
+          %td
+            שלישי
+          %td
+            רביעי
+          %td
+            חמישי
+          %td
+            שישי
+      %tbody
+        %tr#leason1{:height => '43'}
+          %td{:width => '50'}
+            9:30
+          %td.sunday{:width => '80'}
+            #{@schedule.sunday_1}
+          %td.monday{:width => '79'}
+            #{@schedule.monday_1}
+          %td.tuesday{:width => '79'}
+            #{@schedule.tuesday_1}
+          %td.wednseday{:width => '85'}
+            #{@schedule.wednesday_1}
+          %td.thursday{:width => '79'}
+            #{@schedule.thursday_1}
+          %td.friday{:width => '79'}
+            #{@schedule.friday_1}
+        %tr#leason2{:height => '43'}
+          %td{:width => '50'}
+            11:30
+          %td.sunday{:width => '79'}
+            #{@schedule.sunday_2}
+          %td.monday{:width => '79'}
+            #{@schedule.monday_2}
+          %td.tuesday{:width => '79'}
+            #{@schedule.tuesday_2}
+          %td.wednseday{:width => '79'}
+            #{@schedule.wednesday_2}
+          %td.thursday{:width => '79'}
+            #{@schedule.thursday_2}
+          %td.friday{:width => '79'}
+            #{@schedule.friday_2}
+        %tr#leason3{:height => '43'}
+          %td
+            14:30
+          %td.sunday{:width => '50'}
+            #{@schedule.sunday_3}
+          %td.monday{:width => '79'}
+            #{@schedule.monday_3}
+          %td.tuesday{:width => '79'}
+            #{@schedule.tuesday_3}
+          %td.wednseday{:width => '79'}
+            #{@schedule.wednesday_3}
+          %td.thursday{:width => '79'}
+            #{@schedule.thursday_3}
+          %td.friday{:width => '79'}
+            #{@schedule.friday_3}
+        %tr#leason4{:height => '43'}
+          %td{:width => '50'}
+            18:30
+          %td.sunday{:width => '79'}
+            #{@schedule.sunday_4}
+          %td.monday{:width => '79'}
+            #{@schedule.monday_4}
+          %td.tuesday{:width => '79'}
+            #{@schedule.tuesday_4}
+          %td.wednseday{:width => '79'}
+            #{@schedule.wednesday_4}
+          %td.thursday{:width => '79'}
+            #{@schedule.thursday_4}
+          %td.friday{:width => '79'}
+            #{@schedule.friday_4}
+        %tr#leason5{:height => '43'}
+          %td{:width => '50'}
+            20:30
+          %td.sunday{:width => '79'}
+            #{@schedule.sunday_5}
+          %td.monday{:width => '79'}
+            #{@schedule.monday_5}          
+          %td.tuesday{:width => '79'}
+            #{@schedule.tuesday_5}
+          %td.wednseday{:width => '79'}
+            #{@schedule.wednesday_5}
+          %td.thursday{:width => '79'}
+            #{@schedule.thursday_5}
+          %td.friday{:width => '79'}
+            #{@schedule.friday_5}                                                   
     %img.sutra{:src => 'images/schedule-sutra.png'}
   %section#main-text
     %header
