@@ -57,10 +57,7 @@ get '/rinat' do
   haml :rinat
 end
 
-get '/admin' do
-  use Rack::Auth::Basic, "Restricted Area" do |username, password|
-    [username, password] == ['rinat', 'aluma']
-  end
+get '/adminverysecret' do
   @note = getNote()
   @schedule = getSchedule()
   haml :admin

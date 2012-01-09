@@ -1,11 +1,14 @@
 %div.admin
   %section.note
+    %header
+      ** To insert a line break please use the < br > tag **
+    %br
     %form{:action => "admin/notes", :method => "post"}
-      %label{:for => "header"} title
+      %label{:for => "header"} News Title
       %br
       %input.header{:type => "text", :name => "header", :value => "#{@note.header}"}
       %br
-      %label{:for => "header"} text
+      %label{:for => "header"} News Text
       %br
       %input.body{:type => "text", :name => "body", :value => "#{@note.body}"}
       %br
@@ -32,7 +35,7 @@
         %tbody
           %tr
             %td
-              %input.day{:type => "text", :name => "sunday1", :value => "#{@schedule.sunday_1}"}
+              %input.day{:type => "text", :name => "sunday_1", :value => "#{@schedule.sunday_1}"}
             %td
               %input.day{:type => "text", :name => "monday_1", :value => "#{@schedule.monday_1}"}
             %td
@@ -95,5 +98,9 @@
               %input.day{:type => "text", :name => "thursday_5", :value => "#{@schedule.thursday_5}"}
             %td
               %input.day{:type => "text", :name => "friday_5", :value => "#{@schedule.friday_5}"}
+      %br
       %input{:id => "noteUpdate", :type => "submit", :value => "Update"}
+      %br
+      %br
+      %br
 %div.clear
