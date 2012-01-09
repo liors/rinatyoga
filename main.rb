@@ -19,6 +19,19 @@ configure :production do
   enable :sessions  
 end
 
+helpers do
+  def protected!
+    unless authorized?
+      response['WWW-Authenticate'] = %(Basic realm="Testing HTTP Auth")
+      throw(:halt, [401, "Not authorized\n"])
+    end
+  end
+
+  def authorized?
+    @auth ||=  Rack::Auth::Basic::Request.new(request.env)
+    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['rinat', 'aluma']
+  end
+end
 
 
 get '/' do
@@ -57,7 +70,8 @@ get '/rinat' do
   haml :rinat
 end
 
-get '/adminverysecret' do
+get '/admin' do
+  protected!
   @note = getNote()
   @schedule = getSchedule()
   haml :admin
