@@ -67,9 +67,6 @@ get '/admin' do
 end
 
 post '/admin/notes' do
-  use Rack::Auth::Basic, "Restricted Area" do |username, password|
-    [username, password] == ['rinat', 'aluma']
-  end
   @note = getNote()
   @note.header = params[:header]
   @note.body = params[:body]
@@ -81,9 +78,6 @@ post '/admin/notes' do
 end
 
 post '/admin/schedule' do
-  use Rack::Auth::Basic, "Restricted Area" do |username, password|
-    [username, password] == ['rinat', 'aluma']
-  end
   schedule = getSchedule()
   schedule.sunday_1 = params[:sunday_1]
   schedule.sunday_2 = params[:sunday_2]
