@@ -25,6 +25,7 @@ rinatyoga.site = {
     },
     gallery : function() {
         $('a.#gallery').css('color', '#008a71');
+        $("a[rel^='prettyPhoto']").prettyPhoto({deeplinking: 'false'});
         rinatyoga.site.noteColorChange();
     },
     rinat : function() {

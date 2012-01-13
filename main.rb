@@ -128,6 +128,7 @@ post '/admin/schedule' do
 end
 
 def getNote
+  
   @note = session[:note]
   if @note.nil?
     @note = Note.all_in().limit(1)[0]
