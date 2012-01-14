@@ -99,7 +99,7 @@ body > #wrap {height: auto; min-height: 100%;}
 }
 .sidebar {
 	float:right;
-    padding:0 60px 40px;
+    padding:0 55px 40px;
 }
 .sidebar .navigation .navtabs li{
 	direction: rtl;
@@ -174,9 +174,12 @@ body > #wrap {height: auto; min-height: 100%;}
     padding-top:20px;
 }
 .schedule #main-text {
-    padding:10px 0 40px 40px;
+    padding:10px 0 10px 40px;
     font-size:15px;
     color:#191919;
+}
+.schedule .prices {
+    padding-bottom: 40px;
 }
 
 .schedule #main-text header, .schedule #main-text footer{
