@@ -51,17 +51,17 @@ get '/about' do
 end
 
 get '/map' do
-  @note = getNote
+  @note = getNote()
   haml :map
 end
 
 get '/news' do
-  @note = getNote
+  @note = getNote()
   haml :news
 end
 
 get '/gallery' do
-  @note = getNote
+  @note = getNote()
   haml :gallery
 end
 
