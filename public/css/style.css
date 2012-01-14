@@ -337,9 +337,15 @@ body > #wrap {height: auto; min-height: 100%;}
     border:1px solid rgba(189, 200, 177, 0.8);
 }
 
+.admin .schedule {
+    position:relative;
+    left:40px;
+}
+
 .admin .schedule td {
     font-size:12px;
     padding:2px;
+    text-align:right;
 }
 .admin .schedule td input[type=text] {
     width:90px;

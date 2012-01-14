@@ -21,6 +21,7 @@
         %thead
           %tr
             %td
+            %td
               Sunday
             %td
               Monday
@@ -34,6 +35,8 @@
               Friday
         %tbody
           %tr
+            %td{:width => '50'}
+              9:30
             %td
               %input.day{:type => "text", :name => "sunday_1", :value => "#{@schedule.sunday_1}"}
             %td
@@ -47,6 +50,8 @@
             %td
               %input.day{:type => "text", :name => "friday_1", :value => "#{@schedule.friday_1}"}
           %tr
+            %td{:width => '50'}
+              11:30
             %td
               %input.day{:type => "text", :name => "sunday_2", :value => "#{@schedule.sunday_2}"}
             %td
@@ -61,6 +66,8 @@
               %input.day{:type => "text", :name => "friday_2", :value => "#{@schedule.friday_2}"}
           %tr
             %td
+              14:30
+            %td
               %input.day{:type => "text", :name => "sunday_3", :value => "#{@schedule.sunday_3}"}
             %td
               %input.day{:type => "text", :name => "monday_3", :value => "#{@schedule.monday_3}"}
@@ -73,6 +80,8 @@
             %td
               %input.day{:type => "text", :name => "friday_3", :value => "#{@schedule.friday_3}"}
           %tr
+            %td{:width => '50'}
+              18:30
             %td
               %input.day{:type => "text", :name => "sunday_4", :value => "#{@schedule.sunday_4}"}
             %td
@@ -86,6 +95,8 @@
             %td
               %input.day{:type => "text", :name => "friday_4", :value => "#{@schedule.friday_4}"}
           %tr
+            %td{:width => '50'}
+              20:30
             %td
               %input.day{:type => "text", :name => "sunday_5", :value => "#{@schedule.sunday_5}"}
             %td
